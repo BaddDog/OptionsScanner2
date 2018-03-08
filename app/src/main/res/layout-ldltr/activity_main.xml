@@ -36,4 +36,13 @@
         android:backgroundTint="@android:color/holo_orange_light"
         android:text="Analyze Strategies"
         android:visibility="visible" />
+    <Button
+        android:id="@+id/StrategyViews"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="View Strategies"
+        android:visibility="visible" />
+
+
 </LinearLayout>
