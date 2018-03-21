@@ -4,34 +4,46 @@
     android:layout_height="60dp">
 
     <TextView
-        android:id="@+id/score"
+        android:id="@+id/callscore"
         android:layout_width="150dp"
         android:layout_height="30dp"
-        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="293dp"
         android:background="?android:attr/selectableItemBackground"
         android:gravity="center_vertical"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/putscore"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/daystillexpiry"
-        android:layout_width="150dp"
+        android:layout_width="60dp"
         android:layout_height="30dp"
-        android:layout_alignEnd="@+id/score"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignBaseline="@+id/volatility"
+        android:layout_alignBottom="@+id/volatility"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/putstrikeprice" />
 
     <TextView
         android:id="@+id/callpremium"
         android:layout_width="30dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/score"
+        android:layout_alignBottom="@+id/callscore"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="45dp"
-        android:layout_toEndOf="@+id/daystillexpiry" />
+        android:layout_marginEnd="30dp"
+        android:layout_toStartOf="@+id/callstrikeprice" />
 
     <TextView
         android:id="@+id/putpremium"
@@ -46,9 +58,8 @@
         android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/putpremium"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="91dp" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/putstrikeprice"
@@ -60,7 +71,7 @@
 
     <TextView
         android:id="@+id/volatility"
-        android:layout_width="30dp"
+        android:layout_width="50dp"
         android:layout_height="30dp"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
