@@ -20,7 +20,7 @@
         android:layout_width="50dp"
         android:layout_height="30dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="81dp"
         android:layout_toEndOf="@+id/textview" />
 
     <TextView

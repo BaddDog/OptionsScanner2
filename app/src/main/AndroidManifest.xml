@@ -21,6 +21,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="com.android.IntentService" />
             </intent-filter>
         </activity>
         <activity
@@ -41,6 +42,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <service android:name="OptionAnalysisService" >
+        </service>
     </application>
 
 </manifest>
