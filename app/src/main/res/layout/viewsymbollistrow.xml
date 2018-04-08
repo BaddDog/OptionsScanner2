@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="35dp">
 
@@ -13,22 +14,29 @@
         android:gravity="center_vertical"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:textStyle="bold" />
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        tools:textSize="14sp" />
 
     <TextView
         android:id="@+id/textview2"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="30dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="81dp"
-        android:layout_toEndOf="@+id/textview" />
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        tools:textSize="14sp" />
 
     <TextView
         android:id="@+id/textview3"
-        android:layout_width="50dp"
+        android:layout_width="80dp"
         android:layout_height="30dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="73dp"
-        android:layout_toEndOf="@+id/textview2" />
+        android:layout_marginStart="52dp"
+        android:layout_toEndOf="@+id/textview2"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        tools:textSize="14sp" />
 
 </RelativeLayout>
