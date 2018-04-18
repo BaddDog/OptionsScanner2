@@ -1,84 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="60dp">
 
     <TextView
-        android:id="@+id/score"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
-        android:layout_alignParentEnd="true"
+        android:id="@+id/symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="293dp"
-        android:background="?android:attr/selectableItemBackground"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="false"
         android:gravity="center_vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
         android:textSize="16sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/daystillexpiry"
-        android:layout_width="150dp"
+        android:layout_width="23dp"
         android:layout_height="30dp"
-        android:layout_alignEnd="@+id/score"
         android:layout_alignParentBottom="true"
-        android:textStyle="bold"
-        android:textSize="14sp"/>
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/callpremium"
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/score"
+        android:layout_width="42dp"
+        android:layout_height="29dp"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="45dp"
-        android:layout_toEndOf="@+id/daystillexpiry"
-        android:textStyle="bold"
+        android:layout_marginEnd="132dp"
+        android:textColor="@android:color/black"
         android:textSize="14sp"
-        android:textColor="@android:color/black"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/putpremium"
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/callpremium"
+        android:layout_width="41dp"
+        android:layout_height="29dp"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/callpremium"
-        android:textStyle="bold"
+        android:layout_alignStart="@+id/callpremium"
+        android:textColor="@android:color/black"
         android:textSize="14sp"
-        android:textColor="@android:color/black"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/callstrikeprice"
         android:layout_width="40dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/putpremium"
-        android:layout_alignParentEnd="true"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="91dp"
-        android:textStyle="bold"
+        android:layout_marginStart="145dp"
+        android:textColor="@android:color/black"
         android:textSize="14sp"
-        android:textColor="@android:color/black"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/putstrikeprice"
         android:layout_width="40dp"
-        android:layout_height="wrap_content"
+        android:layout_height="31dp"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/callstrikeprice"
-        android:layout_below="@+id/callstrikeprice"
-        android:textStyle="bold"
+        android:textColor="@android:color/black"
         android:textSize="14sp"
-        android:textColor="@android:color/black"/>
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/volatility"
-        android:layout_width="40dp"
+        android:id="@+id/score2"
+        android:layout_width="38dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/CallOpenInterest"
+        android:layout_width="74dp"
         android:layout_height="30dp"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="45dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/PutOpenInterest"
+        android:layout_width="74dp"
+        android:layout_height="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/CallOpenInterest"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/underlyingPrice"
+        android:layout_width="68dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:layout_marginEnd="24dp"
-        android:textColor="@android:color/black"/>
+        android:layout_marginStart="65dp"
+        android:text="TextView" />
 
 </RelativeLayout>
